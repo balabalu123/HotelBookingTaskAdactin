@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.6 on win32)" generated="20221123 11:19:27.709" rpa="false" schemaversion="3">
+<suite id="s1" name="HotelAdactin" source="C:\Users\balua\PycharmProjects\HotelBookingTaskAdactin\TestCases\HotelAdactin.robot">
+<test id="s1-t1" name="HotelBookingConfirmation" line="34">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221123 11:19:28.492" level="INFO">Opening browser 'chrome' to base url 'https://adactinhotelapp.com/'.</msg>
+<status status="PASS" starttime="20221123 11:19:28.491" endtime="20221123 11:19:34.517"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221123 11:19:34.518" endtime="20221123 11:19:34.690"/>
+</kw>
+<kw name="Book A Hotel">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${USERNAME}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221123 11:19:34.892" level="INFO">Element 'id:username' is displayed.</msg>
+<status status="PASS" starttime="20221123 11:19:34.693" endtime="20221123 11:19:34.892"/>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>${USERNAME}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221123 11:19:34.892" endtime="20221123 11:19:34.945"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${USERNAME}</arg>
+<arg>balagood123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221123 11:19:34.946" level="INFO">Typing text 'balagood123' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20221123 11:19:34.945" endtime="20221123 11:19:35.148"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${PASSWORD}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221123 11:19:35.190" level="INFO">Element 'id:password' is displayed.</msg>
+<status status="PASS" starttime="20221123 11:19:35.148" endtime="20221123 11:19:35.190"/>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>${PASSWORD}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221123 11:19:35.190" endtime="20221123 11:19:35.237"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PASSWORD}</arg>
+<arg>SZWWVZ</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221123 11:19:35.239" level="INFO">Typing text 'SZWWVZ' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20221123 11:19:35.238" endtime="20221123 11:19:35.394"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${LOGINBUTTON}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221123 11:19:35.432" level="INFO">Element 'id:login' is displayed.</msg>
+<status status="PASS" starttime="20221123 11:19:35.394" endtime="20221123 11:19:35.433"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGINBUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221123 11:19:35.434" level="INFO">Clicking element 'id:login'.</msg>
+<status status="PASS" starttime="20221123 11:19:35.433" endtime="20221123 11:19:36.686"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${LOCATION}</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20221123 11:19:36.688" level="INFO">Selecting options from selection list 'id:location' by index 3.</msg>
+<status status="PASS" starttime="20221123 11:19:36.686" endtime="20221123 11:19:37.049"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${HOTELS}</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20221123 11:19:37.051" level="INFO">Selecting options from selection list 'id:hotels' by index 2.</msg>
+<status status="PASS" starttime="20221123 11:19:37.049" endtime="20221123 11:19:37.242"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${ROOM_TYPE}</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20221123 11:19:37.244" level="INFO">Selecting options from selection list 'id:room_type' by index 3.</msg>
+<status status="PASS" starttime="20221123 11:19:37.243" endtime="20221123 11:19:37.445"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${ROOM_NOS}</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20221123 11:19:37.447" level="INFO">Selecting options from selection list 'id:room_nos' by index 3.</msg>
+<status status="PASS" starttime="20221123 11:19:37.445" endtime="20221123 11:19:37.641"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${ADULT_ROOM}</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20221123 11:19:37.643" level="INFO">Selecting options from selection list 'id:adult_room' by index 3.</msg>
+<status status="PASS" starttime="20221123 11:19:37.642" endtime="20221123 11:19:37.834"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${CHILD_ROOM}</arg>
+<arg>3</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20221123 11:19:37.836" level="INFO">Selecting options from selection list 'id:child_room' by index 3.</msg>
+<status status="PASS" starttime="20221123 11:19:37.834" endtime="20221123 11:19:38.085"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SUBMIT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221123 11:19:38.087" level="INFO">Clicking element 'id:Submit'.</msg>
+<status status="PASS" starttime="20221123 11:19:38.085" endtime="20221123 11:19:38.592"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${RADIO_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221123 11:19:38.594" level="INFO">Clicking element 'id:radiobutton_0'.</msg>
+<status status="PASS" starttime="20221123 11:19:38.593" endtime="20221123 11:19:38.684"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CONTINUE_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221123 11:19:38.687" level="INFO">Clicking element 'id:continue'.</msg>
+<status status="PASS" starttime="20221123 11:19:38.685" endtime="20221123 11:19:39.272"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FIRST_NAME}</arg>
+<arg>Bala</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221123 11:19:39.274" level="INFO">Typing text 'Bala' into text field 'id:first_name'.</msg>
+<status status="PASS" starttime="20221123 11:19:39.273" endtime="20221123 11:19:39.460"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${LAST_NAME}</arg>
+<arg>subramaniyam</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221123 11:19:39.461" level="INFO">Typing text 'subramaniyam' into text field 'id:last_name'.</msg>
+<status status="PASS" starttime="20221123 11:19:39.460" endtime="20221123 11:19:39.688"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ADDRESS}</arg>
+<arg>16/8,solaiyappan street chennai-21</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221123 11:19:39.690" level="INFO">Typing text '16/8,solaiyappan street chennai-21' into text field 'id:address'.</msg>
+<status status="PASS" starttime="20221123 11:19:39.689" endtime="20221123 11:19:39.919"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CC_NUM}</arg>
+<arg>1234567891234567</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221123 11:19:39.923" level="INFO">Typing text '1234567891234567' into text field 'id:cc_num'.</msg>
+<status status="PASS" starttime="20221123 11:19:39.920" endtime="20221123 11:19:40.136"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${CC_TYPE}</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20221123 11:19:40.138" level="INFO">Selecting options from selection list 'id:cc_type' by index 2.</msg>
+<status status="PASS" starttime="20221123 11:19:40.136" endtime="20221123 11:19:40.357"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${EXP_MONTH}</arg>
+<arg>5</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20221123 11:19:40.358" level="INFO">Selecting options from selection list 'id:cc_exp_month' by index 5.</msg>
+<status status="PASS" starttime="20221123 11:19:40.357" endtime="20221123 11:19:40.620"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${EXP_YEAR}</arg>
+<arg>11</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20221123 11:19:40.623" level="INFO">Selecting options from selection list 'id:cc_exp_year' by index 11.</msg>
+<status status="PASS" starttime="20221123 11:19:40.621" endtime="20221123 11:19:40.961"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CVV_NUMBER}</arg>
+<arg>456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221123 11:19:40.964" level="INFO">Typing text '456' into text field 'id:cc_cvv'.</msg>
+<status status="PASS" starttime="20221123 11:19:40.963" endtime="20221123 11:19:41.133"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOOKNOW_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221123 11:19:41.134" level="INFO">Clicking element 'id:book_now'.</msg>
+<status status="PASS" starttime="20221123 11:19:41.133" endtime="20221123 11:19:41.230"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221123 11:19:51.236" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20221123 11:19:41.231" endtime="20221123 11:19:51.236"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${title}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20221123 11:19:51.245" level="INFO">Page title is 'Adactin.com - Hotel Booking Confirmation'.</msg>
+<status status="PASS" starttime="20221123 11:19:51.237" endtime="20221123 11:19:51.245"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${order_no}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221123 11:19:51.245" endtime="20221123 11:19:51.246"/>
+</kw>
+<status status="PASS" starttime="20221123 11:19:34.691" endtime="20221123 11:19:51.246"/>
+</kw>
+<status status="PASS" starttime="20221123 11:19:28.490" endtime="20221123 11:19:51.246"/>
+</test>
+<status status="PASS" starttime="20221123 11:19:27.713" endtime="20221123 11:19:51.247"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="HotelAdactin">HotelAdactin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
